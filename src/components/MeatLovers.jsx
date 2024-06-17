@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "./MeatLovers.module.css"
+import styles from "./Recipes.module.css";
 import MeatModal from "./MeatModal";
 
 const MeatLovers = () => {
@@ -30,7 +30,7 @@ const MeatLovers = () => {
   useEffect(() => {
     getData();
   }, []);
-  
+
   const openModal = (recipe) => {
     setSelectedRecipe(recipe);
     setIsOpenModal(true);
@@ -39,29 +39,32 @@ const MeatLovers = () => {
   const closeModal = () => {
     setIsOpenModal(false);
     setSelectedRecipe(null);
-  }
-
+  };
 
   return (
     <div>
+      <div>MeatLovers</div>
       <div className={styles.container}>
-      {recipes.map((eachrecipe) => {
-        return (
-          <div key={eachrecipe.id} className={styles.recipeItem}>
-            <img 
-            src={eachrecipe.image} 
-            className={styles.recipeImage} 
-            onClick={()=> {openModal(eachrecipe)}} ></img>
-            <p className={styles.recipeTitle}>{eachrecipe.title}</p>
-          </div>
-        );
-      })}
+        {recipes.map((eachrecipe) => {
+          return (
+            <div key={eachrecipe.id} className={styles.recipeItem}>
+              <img
+                src={eachrecipe.image}
+                className={styles.recipeImage}
+                onClick={() => {
+                  openModal(eachrecipe);
+                }}
+              ></img>
+              <p className={styles.recipeTitle}>{eachrecipe.title}</p>
+            </div>
+          );
+        })}
       </div>
-     <MeatModal
-      isOpen={isOpenModal}
-      onClose={closeModal}
-      recipe={selectedRecipe}
-     /> 
+      <MeatModal
+        isOpen={isOpenModal}
+        onClose={closeModal}
+        recipe={selectedRecipe}
+      />
     </div>
   );
 };

@@ -13,9 +13,8 @@ const MeatModal = ({ isOpen, onClose, recipe }) => {
           <div className="ingredients">
             <p>Ingredients</p>
             <div className="instructions">
-              <ol>
-                <li>{recipe.instructions}</li>
-              </ol>
+              <p>INSTRUCTIONS</p>
+              <ol dangerouslySetInnerHTML={{ __html: recipe.instructions }} />
             </div>
           </div>
         </div>

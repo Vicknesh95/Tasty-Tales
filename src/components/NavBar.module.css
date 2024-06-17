@@ -1,0 +1,51 @@
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  background-color: rgb(16, 44, 87);
+  position: sticky;
+  top: 0; 
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 2rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+
+nav ul li a.active{
+background-color: rgb(22,121,171);
+}
+
+nav ul li a:hover {
+  background-color: rgb(22,121,171);
+}
+
+
+
+
+
