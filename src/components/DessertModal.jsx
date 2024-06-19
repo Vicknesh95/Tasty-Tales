@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import styles from "./Modal.module.css";
 
-const VeganModal = ({ isOpen, onClose, recipe }) => {
+const DessertModal = ({ isOpen, onClose, recipe }) => {
   if (!isOpen) return null;
 
   return (
@@ -28,4 +28,4 @@ const VeganModal = ({ isOpen, onClose, recipe }) => {
   );
 };
 
-export default VeganModal;
+export default DessertModal;

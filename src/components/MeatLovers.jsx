@@ -27,6 +27,35 @@ const MeatLovers = () => {
     }
   };
 
+  const addFavouriteRecipes = async (recipe) => {
+    try {
+      const res = await fetch(import.meta.env.VITE_AIRTABLE_SERVER, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${import.meta.env.VITE_AIRTABLE_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          records: [
+            {
+              fields: {
+                id: recipe.id.toString(),
+                title: recipe.title,
+                image: recipe.image,
+                url: recipe.sourceUrl,
+              },
+            },
+          ],
+        }),
+      });
+      if (!res.ok) {
+        throw new Error("could not like recipe");
+      }
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
+
   useEffect(() => {
     getData();
   }, []);
@@ -46,6 +75,9 @@ const MeatLovers = () => {
       <div>MeatLovers</div>
       <div className={styles.container}>
         {recipes.map((eachrecipe) => {
+          if (!eachrecipe.image) {
+            return null;
+          }
           return (
             <div key={eachrecipe.id} className={styles.recipeItem}>
               <img
@@ -55,7 +87,11 @@ const MeatLovers = () => {
                   openModal(eachrecipe);
                 }}
               ></img>
+
               <p className={styles.recipeTitle}>{eachrecipe.title}</p>
+              <button onClick={() => addFavouriteRecipes(eachrecipe)}>
+                Like
+              </button>
             </div>
           );
         })}

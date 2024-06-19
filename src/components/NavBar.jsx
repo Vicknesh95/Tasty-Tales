@@ -24,7 +24,16 @@ const NavBar = () => {
             to="/Vegetarian"
             className={(navData) => (navData.isActive ? styles.active : "")}
           >
-            Vegetarian
+            Vegan
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/Dessert"
+            className={(navData) => (navData.isActive ? styles.active : "")}
+          >
+            Dessert
           </NavLink>
         </li>
 
@@ -34,6 +43,15 @@ const NavBar = () => {
             className={(navData) => (navData.isActive ? styles.active : "")}
           >
             Wine Pairing
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/Favourites"
+            className={(navData) => (navData.isActive ? styles.active : "")}
+          >
+            Favourites
           </NavLink>
         </li>
       </ul>

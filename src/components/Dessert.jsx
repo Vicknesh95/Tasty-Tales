@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Recipes.module.css";
-import VeganModal from "./VeganModal";
+import DessertModal from "./DessertModal";
 
-const Vegan = () => {
-  const [vegans, setVegans] = useState([]);
-  const [selectedVegan, setSelectedVegan] = useState(null);
+const Dessert = () => {
+  const [desserts, setDesserts] = useState([]);
+  const [selectedDessert, setSelectedDessert] = useState(null);
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   const getData = async () => {
@@ -13,14 +13,14 @@ const Vegan = () => {
         import.meta.env.VITE_SERVER +
           "apiKey=" +
           import.meta.env.VITE_API_KEY +
-          "&include-tags=vegan,main-course&exclude-tags=dessert,beverage,drink,sauce,marinade&number=20"
+          "&include-tags=desserts,beverages&number=20"
       );
       if (!res.ok) {
         throw new Error("fetch error");
       }
       const data = await res.json();
 
-      setVegans(data.recipes);
+      setDesserts(data.recipes);
       console.log(data);
     } catch (err) {
       console.log(err.message);
@@ -61,48 +61,46 @@ const Vegan = () => {
   }, []);
 
   const openModal = (recipe) => {
-    setSelectedVegan(recipe);
+    setSelectedDessert(recipe);
     setIsOpenModal(true);
   };
 
   const closeModal = () => {
     setIsOpenModal(false);
-    setSelectedVegan(null);
+    setSelectedDessert(null);
   };
 
   return (
     <div>
-      <div>Vegan</div>
+      <div>Dessert</div>
       <div className={styles.container}>
-        {vegans.map((eachvegan) => {
-          if (!eachvegan.image) {
+        {desserts.map((dessert) => {
+          if (!dessert.image) {
             return null;
           }
           return (
-            <div key={eachvegan.id} className={styles.recipeItem}>
+            <div key={dessert.id} className={styles.recipeItem}>
               <img
-                src={eachvegan.image}
-                placeholder={eachvegan.title}
+                src={dessert.image}
+                placeholder={dessert.title}
                 className={styles.recipeImage}
                 onClick={() => {
-                  openModal(eachvegan);
+                  openModal(dessert);
                 }}
               ></img>
-              <p className={styles.recipeTitle}>{eachvegan.title}</p>
-              <button onClick={() => addFavouriteRecipes(eachvegan)}>
-                Like
-              </button>
+              <p className={styles.recipeTitle}>{dessert.title}</p>
+              <button onClick={() => addFavouriteRecipes(dessert)}>Like</button>
             </div>
           );
         })}
       </div>
-      <VeganModal
+      <DessertModal
         isOpen={isOpenModal}
         onClose={closeModal}
-        recipe={selectedVegan}
+        recipe={selectedDessert}
       />
     </div>
   );
 };
 
-export default Vegan;
+export default Dessert;

@@ -12,6 +12,11 @@ const MeatModal = ({ isOpen, onClose, recipe }) => {
           <h1>{recipe.title}</h1>
           <div className="ingredients">
             <p>Ingredients</p>
+            <ul>
+              {recipe.extendedIngredients.map((ingredient) => {
+                return <li key={ingredient.id}>{ingredient.name}</li>;
+              })}
+            </ul>
             <div className="instructions">
               <p>INSTRUCTIONS</p>
               <ol dangerouslySetInnerHTML={{ __html: recipe.instructions }} />
