@@ -74,7 +74,6 @@ const Vegan = () => {
 
   return (
     <div>
-      <div>Vegan</div>
       <div className={styles.container}>
         {vegans.map((eachvegan) => {
           if (!eachvegan.image) {

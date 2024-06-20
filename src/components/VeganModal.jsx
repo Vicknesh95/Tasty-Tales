@@ -15,9 +15,10 @@ const VeganModal = ({ isOpen, onClose, recipe }) => {
             <ul>
               {recipe.extendedIngredients.map((ingredient) => {
                 const { amount, unitLong } = ingredient.measures.metric;
+                const roundedAmount = Number.isInteger(amount) ? amount : amount.toFixed(1)
                 return (
                   <li key={ingredient.id}>
-                    {ingredient.name} - {amount} {unitLong}
+                    {ingredient.name} - {roundedAmount} {unitLong}
                   </li>
                 );
               })}
