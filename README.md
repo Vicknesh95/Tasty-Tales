@@ -3,6 +3,7 @@ TASTY TALES
 Welcome to Tasty Tales! This application is designed for food enthusiasts of all kinds. Whether you're a meat lover, vegan, dessert aficionado, or wine connoisseur, our app has something special for you. Explore a wide variety of recipes, learn about wines, and save your favorite dishes for later with a simple click.
 
 FEATURES
+
 Main Page: Easily navigate through the different sections of the app using our intuitive navbar.
 Meat Lovers Page: Discover a selection of delicious non-vegetarian recipes that highlight the best of meat-based dishes.
 Vegan Page: Explore a diverse range of vegan recipes, including savory dishes, desserts, and beverages, all made without any animal products.
@@ -12,6 +13,7 @@ Favorites Page: View all the recipes you have favorited by clicking the heart-sh
 
 
 NAVIGATION
+
 Main Page (Navbar): Access any section of the app quickly from the main navigation bar.
 Meat Lovers Page: Browse through a curated list of meat-based recipes.
 Vegan Page: Find vegan recipes including desserts and beverages.
@@ -20,6 +22,7 @@ Wine Page: Read up on different wines and their taste profiles.
 Favorites Page: View and manage your collection of favorited recipes.
 
 USAGE
+
 Browsing Recipes: Navigate to the desired page using the navbar. Browse through the recipes by scrolling.
 Viewing Details: Click on any recipe image to view the full recipe details.
 Liking Recipes: Click the heart-shaped like button below any recipe image to add it to your favorites.
