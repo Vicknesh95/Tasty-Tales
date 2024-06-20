@@ -29,6 +29,7 @@ Liking Recipes: Click the heart-shaped like button below any recipe image to add
 Favorites Page: Access the favorites page from the navbar to view all your liked recipes. Here you can review your collection at any time if you'd like. Once in the favourites page, users may click on the button below the recipe which will direct them to the full recipe
 
 TECHNOLOGIES USED
+
 -React JS
 -HTML
 -CSS
