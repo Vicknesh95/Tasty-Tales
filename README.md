@@ -25,25 +25,30 @@ Viewing Details: Click on any recipe image to view the full recipe details.
 Liking Recipes: Click the heart-shaped like button below any recipe image to add it to your favorites.
 Favorites Page: Access the favorites page from the navbar to view all your liked recipes. Here you can review your collection at any time if you'd like. Once in the favourites page, users may click on the button below the recipe which will direct them to the full recipe
 
-![Main Page](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/52cd88f6-5745-4fb3-a2fe-27d68b233288)
-MAIN PAGE
+WIREFRAME
+![E0534696-BE89-4A12-8E2D-E1028D1BA7CF_1_105_c](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/fc8cd9f8-e643-42b7-9f75-27684dda1f96)
+![84B3F3A1-B864-4CD5-87E5-A399D4591752_1_105_c](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/012c416b-7011-4a5a-ba8e-9b5dfb36f96b)
 
-![Meat Lovers Page](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/3352bd3e-46d2-4254-9609-d02d3b34a61e)
+
+
+Main Page
+![7F75E192-6B51-4E7C-8CEA-445407651731_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/f4780bf2-4d03-406c-b04d-bf88709c3a41)
+
 Meat Lovers Page
+![0ED89C41-DEC5-4221-90FA-9FEB954AEE14_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/1d9c2ece-574a-48bc-9994-23cde14a96ff)
 
-![Modal1](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/6203b9b3-4574-4af1-adab-2b1725d7d8c5)
-![Modal1continued](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/73714021-5576-4a2b-a938-31799122c216)
-food recipe modals that pop up when image is clicked on
+Food recipe modals that pop up when image is clicked on
+![F8B982A8-DAAE-417A-A206-10EFC1D04DFB_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/67fb11cc-46d5-4cdc-b1f1-6d0a009aa095)
+![1607BC75-3520-4F49-98E4-01D83E08A452_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/2ac39a96-edfd-492e-b962-d8fbf14a5b5b)
 
-![Vegan Page](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/05fb3c20-9da0-435e-ac95-0592dabece9a)
 Vegan Page
+![102A56BD-046E-4FD3-90E4-A621368FCE48_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/b28967a7-eaf5-4d46-86a6-21ab8c56bc3e)
 
-![Dessert Page](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/13f3b3cb-e778-49be-ad6e-386679319759)
 Dessert Page
+![8B0F9A96-2014-4C6E-B9EA-32D6A2B9C575_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/0bcfe383-5605-4bf2-be21-00f6b0589d6f)
 
-![Liking Recipes](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/0af3e313-02a1-4003-990d-f392c2d2add5)
 Liking recipes to save and view later
+![0FF56FD2-47AE-41A7-93F3-94961BF74B10_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/cd236d49-0fff-4135-953e-9036d61c806f)
 
-![Favourites](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/66a97ab4-dbca-4c9f-8d44-ca53a53c0e89)
-Fvourites Page where all liked recipes go into
-
+Favourites Page where all liked recipes go into
+![CDB69F8A-948D-41E2-BA5D-9117711DC5F0_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/2d52a153-0f08-403b-97e6-bb2a98a77beb)
