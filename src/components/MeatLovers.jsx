@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Recipes.module.css";
 import MeatModal from "./MeatModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const MeatLovers = () => {
   const [recipes, setRecipes] = useState([]);
@@ -72,7 +74,6 @@ const MeatLovers = () => {
 
   return (
     <div>
-      <div>MeatLovers</div>
       <div className={styles.container}>
         {recipes.map((eachrecipe) => {
           if (!eachrecipe.image) {
@@ -89,8 +90,11 @@ const MeatLovers = () => {
               ></img>
 
               <p className={styles.recipeTitle}>{eachrecipe.title}</p>
-              <button onClick={() => addFavouriteRecipes(eachrecipe)}>
-                Like
+              <button 
+              className={styles.likeButton}
+              onClick={() => addFavouriteRecipes(eachrecipe)}
+              >
+                <FontAwesomeIcon icon={faHeart} />
               </button>
             </div>
           );

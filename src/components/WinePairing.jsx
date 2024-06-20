@@ -43,7 +43,6 @@ const WinePairing = () => {
 
   return (
     <div>
-      <div>Wine List</div>
       <div className={styles.container}>
         {wines.map((wine) => {
           return (

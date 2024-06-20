@@ -7,20 +7,25 @@ const VeganModal = ({ isOpen, onClose, recipe }) => {
   return (
     <div className={styles.modalBackground}>
       <div className={styles.modal}>
-        <button onClick={onClose}> X </button>
-        <div className="recipeName">
-          <h1>{recipe.title}</h1>
-          <div className="ingredients">
-            <p>Ingredients</p>
+        <button className={styles.closeButton} onClick={onClose}> X </button>
+        <div className={styles.recipe}>
+          <h1 className={styles.title}>{recipe.title}</h1>
+          <div className={styles.ingredients}>
+            <h2>INGREDIENTS</h2>
             <ul>
               {recipe.extendedIngredients.map((ingredient) => {
-                return <li key={ingredient.id}>{ingredient.name}</li>;
+                const { amount, unitLong } = ingredient.measures.metric;
+                return (
+                  <li key={ingredient.id}>
+                    {ingredient.name} - {amount} {unitLong}
+                  </li>
+                );
               })}
             </ul>
-            <div className="instructions">
-              <p>INSTRUCTIONS</p>
-              <ol dangerouslySetInnerHTML={{ __html: recipe.instructions }} />
-            </div>
+          </div>
+          <div className={styles.instructions}>
+            <h3>INSTRUCTIONS</h3>
+            <ol dangerouslySetInnerHTML={{ __html: recipe.instructions }} />
           </div>
         </div>
       </div>

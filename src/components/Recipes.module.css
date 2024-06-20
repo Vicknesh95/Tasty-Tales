@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  background-color: #f0f0f0;
+  color: #2e2e2e;
 }
 
 .recipeItem {
@@ -15,9 +17,25 @@
 .recipeImage {
   border-radius: 20px;
   max-width: 100%;
+  cursor: pointer;
+}
+
+.recipeImage:hover {
+opacity: 0.5;
 }
 
 .recipeTitle {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", serif;
   margin-top: 10px;
+}
+
+.likeButton {
+  border: none;
+  font-size: 1.5em;
+}
+
+.likeButton:hover,
+.likeButton:focus {
+  color: red;
+  outline: none;
 }

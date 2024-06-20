@@ -21,7 +21,7 @@ const Favourites2 = () => {
       const data = await res.json();
 
       setShowFavourites(data.records);
-      // console.log(data);
+      
     } catch (err) {
       console.log(err.message);
     }
@@ -33,7 +33,6 @@ const Favourites2 = () => {
 
   return (
     <div>
-      Favourites
       {
         <div className={styles.container}>
           {showFavourites.map((favourites) => {
@@ -45,7 +44,11 @@ const Favourites2 = () => {
                 ></img>
 
                 <p className={styles.recipeTitle}>{favourites.fields.title}</p>
-                <a href={favourites.fields.url}>View Recipe</a>
+                <a href={favourites.fields.url}>
+                  <button type="button" class="btn btn-outline-secondary">
+                    View Recipe
+                  </button>
+                </a>
               </div>
             );
           })}

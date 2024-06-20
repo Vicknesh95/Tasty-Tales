@@ -13,10 +13,75 @@
 
 .modal {
   position: fixed;
-  background: white;
+  background: #c8e6c9;
   width: 700px;
   height: 500px;
   padding: 25px;
   z-index: 100;
   overflow: scroll;
+  border-radius: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  color: #102c57;
+}
+
+.ingredients h2,
+.instructions h3 {
+  margin-bottom: 10px;
+  color: #102c57;
+  font-size: 1.5em;
+}
+
+.ingredients {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #d8e8d8;
+  margin-bottom: 10px;
+}
+
+.instructions {
+  padding: 10px;
+  border: 1px solid #4b2e2e;
+  border-radius: 5px;
+  text-wrap: pretty;
+  background-color: #b0c4b1;
+  margin-top: 20px;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: grey;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  background-color: #145a32;
+}
+
+.wineDescription {
+  padding: 10px;
+  border: 1px solid #4b2e2e;
+  border-radius: 5px;
+  text-wrap: pretty;
+  background-color: #b0c4b1;
+  margin-top: 70px;
 }

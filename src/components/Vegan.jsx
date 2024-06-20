@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Recipes.module.css";
 import VeganModal from "./VeganModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Vegan = () => {
   const [vegans, setVegans] = useState([]);
@@ -82,15 +84,18 @@ const Vegan = () => {
             <div key={eachvegan.id} className={styles.recipeItem}>
               <img
                 src={eachvegan.image}
-                placeholder={eachvegan.title}
+                alt={eachvegan.title}
                 className={styles.recipeImage}
                 onClick={() => {
                   openModal(eachvegan);
                 }}
               ></img>
               <p className={styles.recipeTitle}>{eachvegan.title}</p>
-              <button onClick={() => addFavouriteRecipes(eachvegan)}>
-                Like
+              <button
+                className={styles.likeButton}
+                onClick={() => addFavouriteRecipes(eachvegan)}
+              >
+                <FontAwesomeIcon icon={faHeart} />
               </button>
             </div>
           );

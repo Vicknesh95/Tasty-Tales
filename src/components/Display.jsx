@@ -6,15 +6,18 @@ import Dessert from "./Dessert";
 import NavBar from "./NavBar";
 import Favourites from "./Favourites2";
 import { Routes, Route } from "react-router-dom";
+import LandingPage from "./LandingPage";
 
 const Display = () => {
   return (
     <>
       <NavBar />
       <Routes>
+        <Route path="/" element={<LandingPage />} />
+
         <Route path="MeatLovers" element={<MeatLovers />} />
 
-        <Route path="Vegetarian" element={<Vegan />} />
+        <Route path="Vegan" element={<Vegan />} />
 
         <Route path="Dessert" element={<Dessert />} />
 

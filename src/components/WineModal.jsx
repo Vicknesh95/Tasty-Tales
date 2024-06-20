@@ -7,12 +7,12 @@ const WineModal = ({ isOpen, onClose, wine }) => {
   return (
     <div className={styles.modalBackground}>
       <div className={styles.modal}>
-        <button onClick={onClose}> X </button>
+        <button className={styles.closeButton} onClick={onClose}> X </button>
         <div className="recipeName">
           <h1>{wine.title}</h1>
 
-          <div className="instructions">
-            <h1>DESCRIPTION</h1>
+          <div className={styles.wineDescription}>
+            <p>DESCRIPTION</p>
             <p>{wine.description}</p>
           </div>
         </div>

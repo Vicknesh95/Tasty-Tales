@@ -21,7 +21,7 @@ const NavBar = () => {
 
         <li>
           <NavLink
-            to="/Vegetarian"
+            to="/Vegan"
             className={(navData) => (navData.isActive ? styles.active : "")}
           >
             Vegan

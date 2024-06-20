@@ -9,7 +9,8 @@ nav {
 }
 
 .title {
-  font-size: 2rem;
+  font-family: "Rancho", cursive;
+  font-size: 3rem;
   font-weight: bold;
   margin: 1rem;
   text-decoration: none;
@@ -22,6 +23,8 @@ nav ul {
   list-style: none;
   align-items: center;
   justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5em;
 }
 
 nav li {
