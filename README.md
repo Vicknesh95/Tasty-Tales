@@ -50,6 +50,12 @@ Vegan Page
 Dessert Page
 ![8B0F9A96-2014-4C6E-B9EA-32D6A2B9C575_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/0bcfe383-5605-4bf2-be21-00f6b0589d6f)
 
+Wine Pairing Page
+![11B2AA25-801E-4148-9714-4E189D5E769B_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/cf381562-6e2e-48dd-b60e-c7ffb5e25a96)
+
+Wine Modal
+![CD6275FD-4993-4A76-93B3-8A14313D0D79_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/98c70ffc-caaf-400b-b00f-fb0ad3d136fa)
+
 Liking recipes to save and view later
 ![0FF56FD2-47AE-41A7-93F3-94961BF74B10_1_201_a](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/cd236d49-0fff-4135-953e-9036d61c806f)
 
