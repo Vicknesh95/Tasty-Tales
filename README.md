@@ -28,13 +28,18 @@ Viewing Details: Click on any recipe image to view the full recipe details.
 Liking Recipes: Click the heart-shaped like button below any recipe image to add it to your favorites.
 Favorites Page: Access the favorites page from the navbar to view all your liked recipes. Here you can review your collection at any time if you'd like. Once in the favourites page, users may click on the button below the recipe which will direct them to the full recipe
 
+PLANNED FUTURE ENHANCEMENT
+
+Plan to create a search bars for users to easily find recipes from the database
+Plan to have a functional login page where users can have personalized experience
+
 TECHNOLOGIES USED
 
--React JS
--HTML
--CSS
--AIRTABLE API
--SPOONACULAR API
+React JS
+HTML
+CSS
+AIRTABLE API
+SPOONACULAR API
 
 WIREFRAME
 ![E0534696-BE89-4A12-8E2D-E1028D1BA7CF_1_105_c](https://github.com/Vicknesh95/Tasty-Tales/assets/163378473/fc8cd9f8-e643-42b7-9f75-27684dda1f96)
