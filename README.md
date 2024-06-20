@@ -1,4 +1,5 @@
 #TASTY TALES
+
 Welcome to Tasty Tales! This application is designed for food enthusiasts of all kinds. Whether you're a meat lover, vegan, dessert aficionado, or wine connoisseur, our app has something special for you. Explore a wide variety of recipes, learn about wines, and save your favorite dishes for later with a simple click.
 
 ##FEATURES
