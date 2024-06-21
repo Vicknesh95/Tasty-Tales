@@ -14,10 +14,10 @@ const MeatModal = ({ isOpen, onClose, recipe }) => {
               <h2>INGREDIENTS</h2>
               <ul>
                 {recipe.extendedIngredients.map((ingredient) => {
+                  const { amount, unitLong } = ingredient.measures.metric;
                   const roundedAmount = Number.isInteger(amount)
                     ? amount
                     : amount.toFixed(1);
-                  const { amount, unitLong } = ingredient.measures.metric;
                   return (
                     <li key={ingredient.id}>
                       {ingredient.name} - {roundedAmount} {unitLong}
